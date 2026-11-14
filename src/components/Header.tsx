@@ -98,23 +98,23 @@ export const Header: React.FC = () => {
         {/* Bottom Main Header */}
         <div className="bottom-header" style={{ background: '#ffffff', borderBottom: '1px solid #f0f0f0' }}>
           <div className="container">
-            <div className="bottom-content-wrap row" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: isSticky ? '12px 0' : '18px 0', margin: 0, flexWrap: 'nowrap' }}>
+            <div className="bottom-content-wrap row" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: isSticky ? '10px 0' : '16px 0', margin: 0, flexWrap: 'nowrap' }}>
               {/* Site Logo */}
-              <div className="col-lg-3 col-md-4 col-8" style={{ padding: 0 }}>
+              <div className="col-8 col-lg-3" style={{ padding: 0 }}>
                 <div className="site-branding">
                   <Link to="/" style={{ display: 'inline-flex', alignItems: 'center', textDecoration: 'none' }}>
                     <img
                       src="/assets/img/logo.svg"
                       alt={NGO_DETAILS.name}
-                      style={{ maxHeight: '52px', width: 'auto', display: 'block' }}
+                      style={{ maxHeight: '46px', maxWidth: '100%', width: 'auto', display: 'block', objectFit: 'contain' }}
                     />
                   </Link>
                 </div>
               </div>
 
               {/* Desktop Menu & Donate Button */}
-              <div className="col-lg-9 col-md-8 col-4 text-right" style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-end', gap: '24px', padding: 0 }}>
-                <ul id="mainmenu" className="nav-menu d-none d-lg-flex" style={{ display: 'flex', flexDirection: 'row', alignItems: 'center', margin: 0, padding: 0, listStyle: 'none', gap: '22px' }}>
+              <div className="col-4 col-lg-9 text-right" style={{ display: 'flex', alignItems: 'center', justifyContent: 'flex-end', gap: '20px', padding: 0 }}>
+                <ul id="mainmenu" className="nav-menu d-none d-lg-flex">
                   <li className={isActive('/') && location.pathname === '/' ? 'active' : ''}>
                     <Link to="/">Home</Link>
                   </li>
