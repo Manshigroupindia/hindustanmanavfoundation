@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 70" width="360" height="70" fill="none">
+  <!-- Symbol: Caring Hands & United Humanity (Light on Dark) -->
+  <g transform="translate(6, 6)">
+    <!-- Background subtle soft glow for dark backdrop -->
+    <circle cx="29" cy="29" r="28" fill="#2d261e" stroke="#784e18" stroke-width="1.2"/>
+    
+    <!-- Left Hand / Protective Arc -->
+    <path d="M12 37 C10 30, 14 20, 22 17 C23 20, 21 24, 18 28 C16 31, 16 35, 18 39 C15 39, 13 38, 12 37 Z" fill="#f8b864"/>
+    
+    <!-- Right Hand / Protective Arc -->
+    <path d="M46 37 C48 30, 44 20, 36 17 C35 20, 37 24, 40 28 C42 31, 42 35, 40 39 C43 39, 45 38, 46 37 Z" fill="#f8b864"/>
+    
+    <!-- Central Heart & Uplifting Hands -->
+    <path d="M17 44 C20 49, 29 52, 29 52 C29 52, 38 49, 41 44 C41 40, 37 36, 29 42 C21 36, 17 40, 17 44 Z" fill="#fbbf24"/>
+    
+    <!-- United People / Central Human Figures -->
+    <!-- Center Person -->
+    <circle cx="29" cy="20" r="4.2" fill="#fed7aa"/>
+    <path d="M24 33 C24 28, 34 28, 34 33 C34 36, 24 36, 24 33 Z" fill="#fed7aa"/>
+    
+    <!-- Left Person -->
+    <circle cx="20.5" cy="23.5" r="3.2" fill="#f8b864"/>
+    <path d="M17 34 C17 30, 24 30, 24 34 Z" fill="#f8b864"/>
+    
+    <!-- Right Person -->
+    <circle cx="37.5" cy="23.5" r="3.2" fill="#f8b864"/>
+    <path d="M34 34 C34 30, 41 30, 41 34 Z" fill="#f8b864"/>
+
+    <!-- Compassion Leaf / Sprout of Hope at Top -->
+    <path d="M29 9 C31 12, 31 14, 29 16 C27 14, 27 12, 29 9 Z" fill="#4ade80"/>
+  </g>
+
+  <!-- Typography -->
+  <g transform="translate(76, 16)">
+    <!-- Primary Organization Name -->
+    <text x="0" y="18" font-family="'Jost', system-ui, -apple-system, sans-serif" font-size="20" font-weight="700" fill="#ffffff" letter-spacing="0.4">
+      HINDUSTAN MANAV
+    </text>
+    
+    <!-- Secondary Designation -->
+    <text x="0" y="34" font-family="'Jost', system-ui, -apple-system, sans-serif" font-size="12.5" font-weight="700" fill="#f8b864" letter-spacing="3.2">
+      FOUNDATION
+    </text>
+    
+    <!-- Tagline -->
+    <text x="0" y="46" font-family="'Jost', system-ui, -apple-system, sans-serif" font-size="8.5" font-weight="500" fill="#cbd5e1" letter-spacing="0.8">
+      SERVING HUMANITY • EMPOWERING LIVES
+    </text>
+  </g>
+</svg>
