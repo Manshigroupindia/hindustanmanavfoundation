@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { ChevronLeft, ChevronRight } from 'lucide-react';
 import { HERO_SLIDES } from '../data/siteData';
 import { useDonation } from '../context/DonationContext';
 
@@ -58,14 +57,6 @@ export const HeroSlider: React.FC = () => {
 
     return () => clearTimeout(timeout);
   }, [displayText, isDeleting, phraseIndex]);
-
-  const prevSlide = () => {
-    setCurrentSlide((prev) => (prev - 1 + HERO_SLIDES.length) % HERO_SLIDES.length);
-  };
-
-  const nextSlide = () => {
-    setCurrentSlide((prev) => (prev + 1) % HERO_SLIDES.length);
-  };
 
   const slide = HERO_SLIDES[currentSlide];
 
@@ -214,61 +205,6 @@ export const HeroSlider: React.FC = () => {
             </div>
           </div>
         </div>
-
-        {/* Carousel Navigation Arrows */}
-        <button
-          onClick={prevSlide}
-          aria-label="Previous Slide"
-          style={{
-            position: 'absolute',
-            left: '25px',
-            top: '50%',
-            transform: 'translateY(-50%)',
-            background: 'rgba(255, 255, 255, 0.25)',
-            border: 'none',
-            color: '#fff',
-            width: '46px',
-            height: '46px',
-            borderRadius: '50%',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            cursor: 'pointer',
-            zIndex: 3,
-            transition: 'all 0.3s ease',
-          }}
-          onMouseEnter={(e) => (e.currentTarget.style.background = '#f8b864')}
-          onMouseLeave={(e) => (e.currentTarget.style.background = 'rgba(255, 255, 255, 0.25)')}
-        >
-          <ChevronLeft size={24} />
-        </button>
-
-        <button
-          onClick={nextSlide}
-          aria-label="Next Slide"
-          style={{
-            position: 'absolute',
-            right: '25px',
-            top: '50%',
-            transform: 'translateY(-50%)',
-            background: 'rgba(255, 255, 255, 0.25)',
-            border: 'none',
-            color: '#fff',
-            width: '46px',
-            height: '46px',
-            borderRadius: '50%',
-            display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'center',
-            cursor: 'pointer',
-            zIndex: 3,
-            transition: 'all 0.3s ease',
-          }}
-          onMouseEnter={(e) => (e.currentTarget.style.background = '#f8b864')}
-          onMouseLeave={(e) => (e.currentTarget.style.background = 'rgba(255, 255, 255, 0.25)')}
-        >
-          <ChevronRight size={24} />
-        </button>
 
         {/* Carousel Indicator Dots */}
         <div
