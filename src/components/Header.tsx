@@ -43,30 +43,30 @@ export const Header: React.FC = () => {
         {!isSticky && (
           <div className="top-header" style={{ background: '#f8b864' }}>
             <div className="container">
-              <div className="top-content-wrap row" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '10px 0' }}>
-                <div className="col-sm-8" style={{ display: 'flex', alignItems: 'center' }}>
-                  <ul className="left-info" style={{ display: 'flex', gap: '20px', listStyle: 'none', margin: 0, padding: 0 }}>
-                    <li>
+              <div className="top-content-wrap row" style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '8px 0', margin: 0 }}>
+                <div className="col-12 col-md-8" style={{ display: 'flex', alignItems: 'center', padding: 0 }}>
+                  <ul className="left-info" style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: '16px', listStyle: 'none', margin: 0, padding: 0 }}>
+                    <li style={{ whiteSpace: 'nowrap' }}>
                       <a
                         href={`mailto:${NGO_DETAILS.email}`}
-                        style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', color: '#fff', textDecoration: 'none', fontSize: '14px', fontWeight: 500 }}
+                        style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', color: '#fff', textDecoration: 'none', fontSize: '13.5px', fontWeight: 500, whiteSpace: 'nowrap' }}
                       >
-                        <Mail size={15} />
-                        {NGO_DETAILS.email}
+                        <Mail size={15} style={{ flexShrink: 0 }} />
+                        <span>{NGO_DETAILS.email}</span>
                       </a>
                     </li>
-                    <li>
+                    <li style={{ whiteSpace: 'nowrap' }}>
                       <a
                         href={`tel:${NGO_DETAILS.phone}`}
-                        style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', color: '#fff', textDecoration: 'none', fontSize: '14px', fontWeight: 500 }}
+                        style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', color: '#fff', textDecoration: 'none', fontSize: '13.5px', fontWeight: 500, whiteSpace: 'nowrap' }}
                       >
-                        <Phone size={15} />
-                        {NGO_DETAILS.displayPhone}
+                        <Phone size={15} style={{ flexShrink: 0 }} />
+                        <span>{NGO_DETAILS.displayPhone}</span>
                       </a>
                     </li>
                   </ul>
                 </div>
-                <div className="col-sm-4 d-none d-md-block" style={{ textAlign: 'right' }}>
+                <div className="col-md-4 d-none d-md-block text-right" style={{ padding: 0 }}>
                   <ul className="right-info" style={{ display: 'inline-flex', gap: '15px', listStyle: 'none', margin: 0, padding: 0 }}>
                     <li>
                       <a href={NGO_DETAILS.social.facebook} target="_blank" rel="noopener noreferrer" style={{ color: '#fff' }} aria-label="Facebook">
